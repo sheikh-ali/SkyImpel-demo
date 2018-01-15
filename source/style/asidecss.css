@@ -1,74 +1,64 @@
+.asideHorizontal {
+    display: none;
+}
 
+.asideMain {
+    width: 30%;
+    background-color: darkgray;
+}
+
+.linkMain li {
+    list-style: none;
+    line-height: 3em;
+    width: 10vw;
+    text-align: center;
+    border: 2px solid#FFFFF2;
+    margin-top: 20%;
+    box-shadow: -10px 5px lightgray;
+    -moz-transition: box-shadow .3s ease-out;
+    transition: box-shadow .3s ease-out;
+}
+
+.linkMain li:hover {
+    background-color: lightgray;
+    box-shadow: none;
+}
+
+.linkMain a {
+    display: block;
+    color: black;
+    font-size: 1em;
+    padding: 5%;
+    text-decoration: none;
+}
+
+@media (max-width: 786px) {
     .asideHorizontal {
-        display: none;
-    }
-    
-    .asideMain {
-        width:30%;
-    }
-
-    .linkMain {
-        background-color: darkgray;
-    }
-
-    .linkMain li {
-        list-style: none;
-        line-height: 3em;
-        width: 10vw;
-        text-align: center;
-        border: 2px solid#FFFFF2;
-        margin-top: 20%;
-        box-shadow: -10px 5px lightgray;
-        -moz-transition: box-shadow .3s ease-out;
-        transition: box-shadow .3s ease-out;
-        
-    }
-
-    .linkMain li:hover {
-        background-color: lightgray;
-        box-shadow: none;
-    }
-
-    .linkMain a {
-        display: block;
-        color: black;
-        font-size: 1em;
-        padding: 5%;
-        text-decoration: none;
-        
-
-    }
-
-
-    @media (max-width: 786px) {
-    .asideHorizontal { 
         display: block;
         width: 100%;
         background-color: darkgray;
     }
-
     .asideMain {
         display: none;
     }
-
     .linkHorizontal {
         margin: auto;
         text-align: center;
         padding: 0;
         margin: 0;
     }
-
+    .linkHorizontal a {
+        text-decoration: none;
+    }
     .linkHorizontal li {
         list-style: none;
     }
-    .drpdwnlist {
+    .linkHorizontal li .drpdwnlist {
         display: none;
         background-color: darkgray;
         width: 100%;
         margin: auto;
-    
     }
-
     .drpdwn {
         position: relative;
     }
@@ -78,8 +68,7 @@
         padding: 0;
         z-index: 1;
     }
-
-    .drpdwnlist{
+    .drpdwnlist {
         position: absolute;
     }
 }
