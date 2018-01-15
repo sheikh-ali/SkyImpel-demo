@@ -1,0 +1,29 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.main-container{
+    width: 99.9%;
+    margin: auto;    
+}
+
+.flex-wrap{
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+}
+
+.box{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+}
