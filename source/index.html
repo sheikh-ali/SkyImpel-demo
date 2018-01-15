@@ -1,113 +1,151 @@
-<style>
-    .asideHorizontal {
-        display: none;
-    }
-    
-    .asideMain {
-        width:30%;
-    }
-
-    .linkMain {
-        background-color: darkgray;
-    }
-
-    .linkMain li {
-        list-style: none;
-        line-height: 3em;
-        width: 10vw;
-        text-align: center;
-        border: 2px solid#FFFFF2;
-        margin-top: 20%;
-        box-shadow: -10px 5px lightgray;
-        -moz-transition: box-shadow .3s ease-out;
-        transition: box-shadow .3s ease-out;
-        
-    }
-
-    .linkMain li:hover {
-        background-color: lightgray;
-        box-shadow: none;
-    }
-
-    .linkMain a {
-        display: block;
-        color: black;
-        font-size: 1em;
-        padding: 5%;
-        text-decoration: none;
-        
-
-    }
-
-
-    @media (max-width: 786px) {
-    .asideHorizontal { 
-        display: block;
-        width: 100%;
-        background-color: darkgray;
-    }
-
-    .asideMain {
-        display: none;
-    }
-
-    .linkHorizontal {
-        margin: auto;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .linkHorizontal li {
-        list-style: none;
-    }
-    .drpdwnlist {
-        display: none;
-        background-color: darkgray;
-        width: 100%;
-        margin: auto;
-    
-    }
-
-    .drpdwn {
-        position: relative;
-    }
-    .drpdwn:hover .drpdwnlist {
-        display: block;
-        margin: 0;
-        padding: 0;
-        z-index: 1;
-    }
-
-    .drpdwnlist{
-        position: absolute;
-    }
-}
-</style>
-
-
-<div class="asideMain">
-    <aside>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>final project</title>
+    <link rel="stylesheet" href="style\asidecss.css">
+    <link rel="stylesheet" href="style\footercss.css">
+</head>
+<body>
+    <div class="asideMain">
+        <aside>
             <ul class="linkMain">
-                <li><a href="#"><b>Link 1</b></a></li>
-                <li><a href="#"><b>Link 2</b></a></li>
-                <li><a href="#"><b>Link 3</b></a></li>
-                <li><a href="#"><b>Link 4</b></a></li>
+                <li>
+                    <a href="#">
+                        <b>Link 1</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <b>Link 2</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <b>Link 3</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <b>Link 4</b>
+                    </a>
+                </li>
             </ul>
-    </aside>
-</div>
-
-<div class="asideHorizontal">
-    <aside>
+        </aside>
+    </div>
+    
+    <div class="asideHorizontal">
+        <aside>
             <ul class="linkHorizontal">
-                <li class="drpdwn"><a href="#">▼</a>
+                <li class="drpdwn">
+                    <a href="#">▼</a>
                     <ul class="drpdwnList">
-                        <li><a href="#"><b>Link 1</b></a></li>
-                        <li><a href="#"><b>Link 2</b></a></li>
-                        <li><a href="#"><b>Link 3</b></a></li>
-                        <li><a href="#"><b>Link 4</b></a></li>
+                        <li>
+                            <a href="#">
+                                <b>Link 1</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>Link 2</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>Link 3</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>Link 4</b>
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
-    </aside>
-</div>
+        </aside>
+    </div>
+    
+    
+    
+    <footer class="footer" style="text-align: center;">
+    
+        <div class="footer-div">
+            <h3>Products</h3>
+            <ul>
+                <li class="underline">
+                    <a href="#"> Mobile covers</a>
+                </li>
+                <li class="underline">
+                    <a href="#"> Keychains </a>
+                </li>
+                <li class="underline">
+                    <a href="#"> Canvas </a>
+                </li>
+                <li class="underline">
+                    <a href="#"> Laptop skin </a>
+                </li>
+                <li class="underline">
+                    <a href="#"> Cushions </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>Servics</h3>
+            <ul>
+                <li class="underline">
+                    <a href="#"> Customized Mobile covers</a>
+                </li>
+                <li class="underline">
+                    <a href="#"> Customized keychains </a>
+                </li>
+                <li class="underline">
+                    <a href="#"> Customized Cushions </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>Information </h3>
+            <ul>
+                <li class="underline">
+                    <a href="#">Taking Dimensions </a>
+                </li>
+                <li class="underline">
+                    <a href="#">How to order </a>
+                </li>
+                <li class="underline">
+                    <a href="#">How to Pay & delivery </a>
+                </li>
+                <li class="underline">
+                    <a href="#">HOw to apply Laptop skins</a>
+                </li>
+    
+            </ul>
+        </div>
+        <div class="footer-div">
+    
+            <h3>Contact Us</h3>
+            <ul>
+                <li class="underline">
+                    <a href="#"> Contact Number</a>
+                </li>
+                <li class="underline">
+                    <a href="#"> Address </a>
+                </li>
+                <li class="underline">
+                    <a href="https://www.facebook.com/"> Facebook link </a>
+                </li>
+                <li class="underline">
+                    <a href="https://www.instagram.com"> Instagram link</a>
+                </li>
+            </ul>
+        </div>
+        <h5 style="width:100%;">&copy; Copyright 2018| All Rights Reserved by
+            <a href="index.html" style="color:orangered;">layout</a>
+        </h5>
+    </footer>
+</body>
+</html>
+
