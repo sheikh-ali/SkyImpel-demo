@@ -36,8 +36,15 @@ footer{
 
 
 
-@media (max-width: 360px){
-.footer-div{
+@media (max-width: 480px){
+footer{
+    flex-direction: column;
+}
+    .footer-div{
          border-bottom: 2px solid orangered;
+      
+        }
+.footer-div .underline{
+text-align: center;
 }
 }
