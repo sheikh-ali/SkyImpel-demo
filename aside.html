@@ -1,0 +1,115 @@
+<style>
+    .asideHorizontal {
+        display: none;
+    }
+    
+    .asideMain {
+        width:30%;
+    }
+
+    .linkMain {
+        background-color: darkgray;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .linkMain li {
+        line-height: 3em;
+        width: 10vw;
+        text-align: center;
+        border: 2px solid#FFFFF2;
+        margin-top: 20%;
+        box-shadow: -10px 5px lightgray;
+        -moz-transition: box-shadow .3s ease-out;
+        transition: box-shadow .3s ease-out;
+        
+    }
+
+    .linkMain li:hover {
+        background-color: lightgray;
+        box-shadow: none;
+    }
+
+    .linkMain a {
+        display: block;
+        color: black;
+        font-size: 1em;
+        padding: 5%;
+        
+
+    }
+
+
+    @media (max-width: 786px) {
+    .asideHorizontal { 
+        display: block;
+        width: 100%;
+        background-color: darkgray;
+    }
+
+    .asideMain {
+        display: none;
+    }
+
+    .linkHorizontal {
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .drpdwnlist {
+        display: none;
+        background-color: darkgray;
+        width: 100%;
+        margin: auto;
+    
+    }
+
+    .drpdwn {
+        position: relative;
+    }
+    .drpdwn:hover .drpdwnlist {
+        display: block;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+    }
+
+    .drpdwnlist{
+        position: absolute;
+    }
+}
+</style>
+
+
+<div class="asideMain">
+    <aside>
+            <ul class="linkMain">
+                <li><a href="#"><b>Link 1</b></a></li>
+                <li><a href="#"><b>Link 2</b></a></li>
+                <li><a href="#"><b>Link 3</b></a></li>
+                <li><a href="#"><b>Link 4</b></a></li>
+            </ul>
+    </aside>
+</div>
+
+<div class="asideHorizontal">
+    <aside>
+            <ul class="linkHorizontal">
+                <li class="drpdwn"><a href="#">▼</a>
+                    <ul class="drpdwnList">
+                        <li><a href="#"><b>Link 1</b></a></li>
+                        <li><a href="#"><b>Link 2</b></a></li>
+                        <li><a href="#"><b>Link 3</b></a></li>
+                        <li><a href="#"><b>Link 4</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+    </aside>
+</div>
