@@ -4,15 +4,12 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-      width: 100%;
-     
+    width: 100%;
 }
 
 .footer-div{
     color: rgba(255, 255, 255, 0.808);
     font-size: 20px;
-
-   
 }
 
 
@@ -32,12 +29,17 @@ footer{
     color: rgb(59, 19, 19);
 }
 
+@media (max-width: 450px){
+    .footer {
+            flex-direction: column;
+    }
+    .footer-div{
+        border-bottom: 2px solid orangered;
+        text-align: center;
+    }
 
-
-
-
-@media (max-width: 360px){
-.footer-div{
-         border-bottom: 2px solid orangered;
-}
+    .footer-div h3 {
+        text-align: left;
+        padding-left: 38px;
+    }
 }
